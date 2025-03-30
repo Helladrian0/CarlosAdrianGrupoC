@@ -60,7 +60,7 @@ Portafolio del grupo
 [![Email](https://img.shields.io/badge/Email-FF5252?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tu@email.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/tu-perfil)
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/tu-usuario)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=about.me&logoColor=white)](https://tu-portfolio.com)
+[![Portafolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=about.me&logoColor=white)](https://tu-portfolio.com)
 
 </div>
 
