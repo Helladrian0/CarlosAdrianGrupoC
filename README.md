@@ -43,17 +43,6 @@ Portafolio del grupo
 
 <div style="background: rgba(0, 0, 0, 0.2); padding: 2rem; border-radius: 15px; text-align: center; backdrop-filter: blur(5px); border: 1px solid rgba(255, 255, 255, 0.1);">
 
-## 📊 Mis Estadísticas
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tu-usuario&show_icons=true&theme=radical&bg_color=45,667eea,764ba2&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=tu-usuario&layout=compact&theme=radical&bg_color=45,667eea,764ba2&hide_border=true)
-
-</div>
-
-<br>
-
-<div style="text-align: center;">
 
 ## 📬 Contáctame
 
