@@ -30,10 +30,12 @@ Portafolio del grupo
 
 ## 🌟 Proyectos
 
-🔹 [Sistema de Recomendación AI](https://github.com/tu-usuario/proyecto-ai)  
-🔹 [Dashboard Interactivo](https://github.com/tu-usuario/dashboard)  
-🔹 [App de Notas con Blockchain](https://github.com/tu-usuario/blockchain-notes)  
-🔹 [Plugin Figma para Devs](https://github.com/tu-usuario/figma-plugin)
+🔹 [Problema sencillo](https://github.com/tu-usuario/proyecto-ai)  
+🔹 [Planificar el desarrollo](https://github.com/tu-usuario/dashboard)  
+🔹 [Integrar herramientas de IA](https://github.com/tu-usuario/blockchain-notes)  
+🔹 [Principios de código](https://github.com/tu-usuario/figma-plugin)
+🔹 [Seguir buenas prácticas](https://github.com/tu-usuario/figma-plugin)
+🔹 [Aplicación funcional](https://github.com/tu-usuario/figma-plugin)
 
 </div>
 
@@ -46,7 +48,7 @@ Portafolio del grupo
 
 ## 📬 Contáctame
 
-[![Email](https://img.shields.io/badge/Email-FF5252?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tu@email.com)
+[![Email](https://img.shields.io/badge/Email-FF5252?style=for-the-badge&logo=gmail&logoColor=white)](mailto:47139939@continental.edu.pe)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/tu-perfil)
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/tu-usuario)
 [![Portafolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=about.me&logoColor=white)](https://tu-portfolio.com)
