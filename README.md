@@ -31,10 +31,15 @@ Portafolio del grupo
 ## 🌟 Proyectos
 
 🔹 [Problema sencillo](https://github.com/tu-usuario/proyecto-ai)  
+
 🔹 [Planificar el desarrollo](https://github.com/tu-usuario/dashboard)  
+
 🔹 [Integrar herramientas de IA](https://github.com/tu-usuario/blockchain-notes) 
+
 🔹 [Principios de código](https://github.com/tu-usuario/figma-plugin)
+
 🔹 [Seguir buenas prácticas](https://github.com/tu-usuario/figma-plugin)
+
 🔹 [Aplicación funcional](https://github.com/tu-usuario/figma-plugin)
 
 </div>
