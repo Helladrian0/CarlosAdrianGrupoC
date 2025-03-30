@@ -18,14 +18,6 @@ Portafolio del grupo
 
 ## 🚀 Tecnologías
 
-![React]
-![TypeScript]
-![Node.js]
-![Python]
-![TensorFlow]
-
-</div>
-
 <div style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 12px; flex: 1; min-width: 250px; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
 
 ## 🌟 Proyectos
