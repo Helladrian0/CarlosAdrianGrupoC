@@ -64,11 +64,4 @@ Portafolio del grupo
 
 </div>
 
-<style>
-  /* Efecto hover para las tarjetas */
-  div[style*="background: rgba(255, 255, 255, 0.1);"]:hover {
-    transform: translateY(-5px);
-    transition: all 0.3s ease;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  }
-</style>
+
