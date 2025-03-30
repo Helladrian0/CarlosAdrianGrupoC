@@ -5,7 +5,7 @@ Portafolio del grupo
     
 # ✨ [Carlos Adrian Aquino Castillo] ✨
 
-<h3>Desarrollador Full Stack | Especialista en IA | Diseñador UI/UX</h3>
+<h3> </h3>
 
   </div>
 </div>
