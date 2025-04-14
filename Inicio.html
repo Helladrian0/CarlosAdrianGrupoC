@@ -1,72 +1,165 @@
-<div align="center" style="border-radius: 20px; overflow: hidden;">
-  <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 15px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.18);">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de Carlos Adrián Aquino Castillo, Desarrollador Web">
+    <meta name="keywords" content="desarrollo web, HTML, CSS, JavaScript, portafolio">
+    <meta name="author" content="Carlos Adrián Aquino Castillo">
     
-# ✨ [Carlos Adrian Aquino Castillo] ✨
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Carlos Adrián Aquino Castillo | Desarrollador Web">
+    <meta property="og:description" content="Portafolio profesional de desarrollo web">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tunombredeusuario.github.io">
+    
+    <title>Carlos Adrián Aquino Castillo | Desarrollador Web</title>
+    
+    <!-- Preconnect para fuentes externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tu hoja de estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Carlos Aquino</a>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
 
-<h3>Desarrollador Full Stack | Especialista en IA | Diseñador UI/UX</h3>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Carlos Adrián Aquino Castillo</h1>
+            <p class="subtitle">Desarrollador Web</p>
+            <div class="social-links">
+                <a href="https://github.com/tunombredeusuario" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/tuperfil" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:47139939@continental.edu.pe" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
 
-  </div>
-</div>
+    <main class="container">
+        <!-- Sección Sobre Mí -->
+        <section id="about" class="section">
+            <h2 class="section-title">Acerca de mí</h2>
+            <div class="about-content">
+                <p>Soy un apasionado del desarrollo web con experiencia en HTML, CSS y JavaScript. Me especializo en crear sitios web responsivos, accesibles y con buenas prácticas de desarrollo.</p>
+                <div class="skills">
+                    <h3>Habilidades técnicas:</h3>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-check"></i> HTML5 & CSS3</li>
+                        <li><i class="fas fa-check"></i> JavaScript</li>
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> Git & GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-<br>
+        <!-- Sección Proyectos -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>Problema sencillo</h3>
+                    <p>Descripción breve del proyecto y tecnologías utilizadas.</p>
+                    <a href="#" class="btn">Ver proyecto</a>
+                </article>
+                
+                <article class="project-card">
+                    <h3>Planificar el desarrollo</h3>
+                    <p>Descripción breve del proyecto y metodologías aplicadas.</p>
+                    <a href="#" class="btn">Ver proyecto</a>
+                </article>
+                
+                <article class="project-card">
+                    <h3>Integrar herramientas de IA</h3>
+                    <p>Descripción de cómo implementé soluciones con inteligencia artificial.</p>
+                    <a href="#" class="btn">Ver proyecto</a>
+                </article>
+                
+                <article class="project-card">
+                    <h3>Principios de código</h3>
+                    <p>Ejemplos de aplicación de principios SOLID y clean code.</p>
+                    <a href="#" class="btn">Ver proyecto</a>
+                </article>
+                
+                <article class="project-card">
+                    <h3>Seguir buenas prácticas</h3>
+                    <p>Implementación de estándares y mejores prácticas de desarrollo.</p>
+                    <a href="#" class="btn">Ver proyecto</a>
+                </article>
+                
+                <article class="project-card">
+                    <h3>Aplicación funcional</h3>
+                    <p>Desarrollo de una aplicación completa con funcionalidades clave.</p>
+                    <a href="#" class="btn">Ver proyecto</a>
+                </article>
+            </div>
+        </section>
 
-<div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+        <!-- Sección Contacto -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Contáctame</h2>
+            <div class="contact-content">
+                <p>Si estás interesado en trabajar conmigo o quieres más información, no dudes en contactarme.</p>
+                <div class="contact-methods">
+                    <a href="mailto:47139939@continental.edu.pe" class="contact-link">
+                        <i class="fas fa-envelope"></i> 47139939@continental.edu.pe
+                    </a>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-<div style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 12px; flex: 1; min-width: 250px; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Carlos Adrián Aquino Castillo. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de privacidad</a>
+                <a href="#">Términos de uso</a>
+            </div>
+        </div>
+    </footer>
 
-## 🚀 Tecnologías
-
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-
-</div>
-
-<div style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 12px; flex: 1; min-width: 250px; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
-
-## 🌟 Proyectos
-
-🔹 [Sistema de Recomendación AI](https://github.com/tu-usuario/proyecto-ai)  
-🔹 [Dashboard Interactivo](https://github.com/tu-usuario/dashboard)  
-🔹 [App de Notas con Blockchain](https://github.com/tu-usuario/blockchain-notes)  
-🔹 [Plugin Figma para Devs](https://github.com/tu-usuario/figma-plugin)
-
-</div>
-
-</div>
-
-<br>
-
-<div style="background: rgba(0, 0, 0, 0.2); padding: 2rem; border-radius: 15px; text-align: center; backdrop-filter: blur(5px); border: 1px solid rgba(255, 255, 255, 0.1);">
-
-## 📊 Mis Estadísticas
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tu-usuario&show_icons=true&theme=radical&bg_color=45,667eea,764ba2&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=tu-usuario&layout=compact&theme=radical&bg_color=45,667eea,764ba2&hide_border=true)
-
-</div>
-
-<br>
-
-<div style="text-align: center;">
-
-## 📬 Contáctame
-
-[![Email](https://img.shields.io/badge/Email-FF5252?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tu@email.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/tu-perfil)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/tu-usuario)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=about.me&logoColor=white)](https://tu-portfolio.com)
-
-</div>
-
-<style>
-  /* Efecto hover para las tarjetas */
-  div[style*="background: rgba(255, 255, 255, 0.1);"]:hover {
-    transform: translateY(-5px);
-    transition: all 0.3s ease;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  }
-</style>
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
