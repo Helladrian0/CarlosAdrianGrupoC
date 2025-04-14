@@ -3,163 +3,443 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio profesional de Carlos Adrián Aquino Castillo, Desarrollador Web">
-    <meta name="keywords" content="desarrollo web, HTML, CSS, JavaScript, portafolio">
-    <meta name="author" content="Carlos Adrián Aquino Castillo">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Carlos Adrián Aquino Castillo | Desarrollador Web">
-    <meta property="og:description" content="Portafolio profesional de desarrollo web">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tunombredeusuario.github.io">
-    
-    <title>Carlos Adrián Aquino Castillo | Desarrollador Web</title>
-    
-    <!-- Preconnect para fuentes externas -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Fuentes de Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome para íconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Tu hoja de estilos -->
-    <link rel="stylesheet" href="styles.css">
+    <title>Portafolio Grupo C - Desarrollo Ágil e IA Generativa</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --tab-bg: #f8f9fa;
+            --tab-active: #ffffff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        /* Estilo de las pestañas */
+        .tabs-container {
+            margin-bottom: 2rem;
+            background: var(--tab-bg);
+            border-radius: 8px 8px 0 0;
+            overflow: hidden;
+        }
+        
+        .tabs {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+        }
+        
+        .tab {
+            padding: 15px 25px;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            transition: all 0.3s ease;
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .tab:last-child {
+            border-right: none;
+        }
+        
+        .tab:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .tab.active {
+            background-color: var(--tab-active);
+            color: var(--primary);
+            border-top: 3px solid var(--accent);
+        }
+        
+        .tab-content {
+            display: none;
+            padding: 2rem;
+            background-color: var(--tab-active);
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1, h2, h3 {
+            color: var(--dark);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            color: var(--secondary);
+            border-left: 5px solid var(--accent);
+            padding-left: 15px;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            margin-top: 1.5rem;
+            color: var(--primary);
+        }
+        
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .member {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .member a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .member a:hover {
+            text-decoration: underline;
+            color: var(--accent);
+        }
+        
+        .checklist {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .checklist li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .checklist li:before {
+            content: "✓";
+            color: #27ae60;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background-color: var(--dark);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        footer a {
+            color: var(--light);
+        }
+
+        /* Estilos para el buscador */
+        #search {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 20px 0;
+            box-sizing: border-box;
+            border: 2px solid var(--secondary);
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            transition: 0.4s;
+        }
+
+        #search:focus {
+            border-color: var(--accent);
+            outline: none;
+        }
+
+        #results {
+            margin-bottom: 20px;
+        }
+
+        .search-result {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .search-result h3 {
+            margin-top: 0;
+            color: var(--secondary);
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .tabs {
+                flex-direction: column;
+            }
+            
+            .tab {
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            }
+            
+            .team-members {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Barra de navegación -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Carlos Aquino</a>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container">
-            <h1>Carlos Adrián Aquino Castillo</h1>
-            <p class="subtitle">Desarrollador Web</p>
-            <div class="social-links">
-                <a href="https://github.com/tunombredeusuario" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/tuperfil" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:47139939@continental.edu.pe" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
+    <header>
+        <h1>Portafolio del Grupo C: Desarrollo Ágil y Uso de Inteligencia Artificial Generativa</h1>
     </header>
 
-    <main class="container">
-        <!-- Sección Sobre Mí -->
-        <section id="about" class="section">
-            <h2 class="section-title">Acerca de mí</h2>
-            <div class="about-content">
-                <p>Soy un apasionado del desarrollo web con experiencia en HTML, CSS y JavaScript. Me especializo en crear sitios web responsivos, accesibles y con buenas prácticas de desarrollo.</p>
-                <div class="skills">
-                    <h3>Habilidades técnicas:</h3>
-                    <ul class="skills-list">
-                        <li><i class="fas fa-check"></i> HTML5 & CSS3</li>
-                        <li><i class="fas fa-check"></i> JavaScript</li>
-                        <li><i class="fas fa-check"></i> Responsive Design</li>
-                        <li><i class="fas fa-check"></i> Git & GitHub</li>
-                    </ul>
+    <!-- Sistema de busqueda -->
+    <input type="text" id="search" placeholder="Buscar proyectos...">
+    <div id="results"></div>
+
+    <!-- Sistema de pestañas -->
+    <div class="tabs-container">
+        <ul class="tabs">
+            <li class="tab active" onclick="openTab(event, 'integrantes')">Integrantes</li>
+            <li class="tab" onclick="openTab(event, 'objetivo')">Objetivo</li>
+            <li class="tab" onclick="openTab(event, 'introduccion')">Introducción</li>
+            <li class="tab" onclick="openTab(event, 'problema')">Descripción del Problema</li>
+            <li class="tab" onclick="openTab(event, 'metodologia')">Metodología Ágil</li>
+            <li class="tab" onclick="openTab(event, 'ia')">IA Generativa</li>
+            <li class="tab" onclick="openTab(event, 'contacto')">Contacto</li>
+        </ul>
+        
+        <!-- Contenido de las pestañas -->
+        <div id="integrantes" class="tab-content active">
+            <h2>Integrantes del Grupo</h2>
+            <div class="team-members">
+                <div class="member">
+                    <h3>Fernando</h3>
+                    <p><a href="https://falzamora.github.io/feralzamora/" target="_blank">falzamora</a></p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Sección Proyectos -->
-        <section id="projects" class="section">
-            <h2 class="section-title">Mis Proyectos</h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <h3>Problema sencillo</h3>
-                    <p>Descripción breve del proyecto y tecnologías utilizadas.</p>
-                    <a href="#" class="btn">Ver proyecto</a>
-                </article>
-                
-                <article class="project-card">
-                    <h3>Planificar el desarrollo</h3>
-                    <p>Descripción breve del proyecto y metodologías aplicadas.</p>
-                    <a href="#" class="btn">Ver proyecto</a>
-                </article>
-                
-                <article class="project-card">
-                    <h3>Integrar herramientas de IA</h3>
-                    <p>Descripción de cómo implementé soluciones con inteligencia artificial.</p>
-                    <a href="#" class="btn">Ver proyecto</a>
-                </article>
-                
-                <article class="project-card">
-                    <h3>Principios de código</h3>
-                    <p>Ejemplos de aplicación de principios SOLID y clean code.</p>
-                    <a href="#" class="btn">Ver proyecto</a>
-                </article>
-                
-                <article class="project-card">
-                    <h3>Seguir buenas prácticas</h3>
-                    <p>Implementación de estándares y mejores prácticas de desarrollo.</p>
-                    <a href="#" class="btn">Ver proyecto</a>
-                </article>
-                
-                <article class="project-card">
-                    <h3>Aplicación funcional</h3>
-                    <p>Desarrollo de una aplicación completa con funcionalidades clave.</p>
-                    <a href="#" class="btn">Ver proyecto</a>
-                </article>
-            </div>
-        </section>
-
-        <!-- Sección Contacto -->
-        <section id="contact" class="section">
-            <h2 class="section-title">Contáctame</h2>
-            <div class="contact-content">
-                <p>Si estás interesado en trabajar conmigo o quieres más información, no dudes en contactarme.</p>
-                <div class="contact-methods">
-                    <a href="mailto:47139939@continental.edu.pe" class="contact-link">
-                        <i class="fas fa-envelope"></i> 47139939@continental.edu.pe
-                    </a>
+                <div class="member">
+                    <h3>Carlos</h3>
+                    <p><a href="https://helladrian0.github.io/CarlosAC/" target="_blank">Aquino</a></p>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Nombre:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensaje:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Enviar mensaje</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; <span id="current-year"></span> Carlos Adrián Aquino Castillo. Todos los derechos reservados.</p>
-            <div class="footer-links">
-                <a href="#">Política de privacidad</a>
-                <a href="#">Términos de uso</a>
+                <div class="member">
+                    <h3>Joseph</h3>
+                    <p><a href="https://josephcf24.github.io/Josephcf24/" target="_blank">Josephcf24</a></p>
+                </div>
+                <div class="member">
+                    <h3>Omar</h3>
+                    <p><a href="https://omar3d2602.github.io/" target="_blank">Omar3d2602</a></p>
+                </div>
+                <div class="member">
+                    <h3>Feliciano Jose</h3>
+                    <p><a href="https://palacios1996.github.io/" target="_blank">Palacios</a></p>
+                </div>
+                <div class="member">
+                    <h3>Michel</h3>
+                    <p><a href="https://nikolaida.github.io/mi-portafolio/" target="_blank">Davalos</a></p>
+                </div>
             </div>
         </div>
+        
+        <div id="objetivo" class="tab-content">
+            <h2>Objetivo del Portafolio</h2>
+            <p>El objetivo de este portafolio es <strong>demostrar las habilidades adquiridas</strong> en el desarrollo ágil de software y la integración de inteligencia artificial generativa en la creación de soluciones efectivas.</p>
+        </div>
+        
+        <div id="introduccion" class="tab-content">
+            <h2>Introducción</h2>
+            <p>Bienvenido/a a nuestro portafolio, un espacio donde convergen el <strong>desarrollo ágil de software</strong> y la <strong>inteligencia artificial generativa</strong> para crear soluciones innovadoras y eficientes.</p>
+            
+            <p>A lo largo de nuestra formación y experiencia, hemos adoptado metodologías ágiles como <strong>Scrum y Kanban</strong>, priorizando la iteración rápida, la adaptabilidad y la entrega de valor continuo. Paralelamente, hemos integrado <strong>IA generativa</strong> para optimizar procesos, automatizar tareas repetitivas y potenciar la creatividad en el desarrollo de software.</p>
+            
+            <p>En este portafolio, encontrarás proyectos que reflejan:</p>
+            <ul class="checklist">
+                <li><strong>Desarrollo ágil</strong> con enfoque en MVP (Producto Mínimo Viable) y mejora continua.</li>
+                <li><strong>Implementación de IA generativa</strong> (como GPT, DALL·E o modelos personalizados) en aplicaciones reales.</li>
+                <li><strong>Soluciones técnicas</strong> que combinan código limpio, arquitectura escalable e innovación.</li>
+            </ul>
+            
+            <p>Explora cómo estas tecnologías se unen para resolver problemas complejos y generar impacto. <strong>¡Vamos a construir el futuro, un sprint a la vez!</strong> 🚀</p>
+        </div>
+        
+        <div id="problema" class="tab-content">
+            <h2>Descripción del Problema</h2>
+            <p>En la actualidad, la necesidad de contar con un portafolio digital se ha vuelto esencial para estudiantes y profesionales que desean mostrar sus habilidades y experiencias de manera efectiva. Un portafolio bien diseñado no solo permite a los individuos destacar sus logros, sino que también facilita la presentación de su trabajo a posibles empleadores o instituciones educativas. </p>
+            <p>Ante esta necesidad, nuestro equipo decidió desarrollar un portafolio digital que sirviera como una plataforma centralizada para exhibir los proyectos y trabajos de cada integrante. La solución propuesta consistió en crear un sitio web que albergará subpáginas individuales para cada miembro, donde se pudieran incluir descripciones de proyectos, habilidades, y ejemplos de trabajo. </p> 
+            <p>Este enfoque no solo permite una presentación clara y profesional, sino que también fomenta la colaboración y el aprendizaje entre los miembros del equipo al compartir recursos y conocimientos durante el proceso de desarrollo. </p>
+            <p>Con esta solución, buscamos no solo cumplir con los requisitos del proyecto, sino también proporcionar un recurso valioso que cada miembro podrá utilizar en su futuro profesional. </p>
+        </div>
+        
+        <div id="metodologia" class="tab-content">
+            <h2>Metodología Ágil Utilizada</h2>
+            <p>Para el desarrollo de nuestro portafolio digital, decidimos implementar la metodología ágil Kanban, que nos permitió gestionar de manera eficiente el flujo de trabajo y facilitar la colaboración entre los miembros del equipo. A continuación, se detalla cómo aplicamos Kanban en nuestro proyecto, incluyendo la planificación de tareas y la gestión del flujo de trabajo..</p>
+        </div>
+        
+        <div id="ia" class="tab-content">
+            <h2>Uso de Inteligencia Artificial Generativa</h2>
+            <p>Detalles sobre cómo se integró la inteligencia artificial generativa en el desarrollo del portafolio.</p>
+            <p>Durante el desarrollo de nuestro portafolio, nos comprometimos a aplicar los principios de código limpio y a mantener un estilo de código consistente. Esto fue fundamental para asegurar la mantenibilidad y legibilidad del proyecto. 
+            <p>A continuación, se detallan las prácticas que implementamos:</p>
+
+            <p>Principios de Código Limpio</p>
+
+            <p>Comentarios Claros: Aunque el código limpio debe ser autoexplicativo, también incluimos comentarios donde era necesario para aclarar secciones complejas o decisiones de diseño. Esto ayudará a otros desarrolladores (o a nosotros mismos) en el futuro a entender rápidamente la lógica detrás de ciertas implementaciones.</p>
+
+            <p>Estilo de Código Consistente</p>
+
+            <p>Refactorización Continua: A medida que desarrollamos nuevas características, también revisamos y refactorizamos el código existente para eliminar duplicaciones y mejorar la claridad.</p>
+        </div>
+        
+        <div id="contacto" class="tab-content">
+            <h2>Contacto</h2>
+            <p>Agradecemos a nuestros profesores y compañeros por su apoyo y orientación durante el desarrollo de este portafolio.</p>
+            <p>Los invitamos a explorar nuestro portafolio y a compartir sus comentarios y preguntas.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 Grupo C - Desarrollo Ágil y IA Generativa</p>
+        <p>Portafolio creado con ❤️ para demostrar nuestras habilidades técnicas</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="script.js"></script>
+    <script>
+        function openTab(evt, tabName) {
+            // Oculta todos los contenidos de pestañas
+            var tabContents = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+            
+            // Desactiva todas las pestañas
+            var tabs = document.getElementsByClassName("tab");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove("active");
+            }
+            
+            // Muestra la pestaña actual y activa el botón
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        // Implementación del sistema de búsqueda
+        document.getElementById('search').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const resultsContainer = document.getElementById('results');
+            
+            // Limpiar resultados anteriores
+            resultsContainer.innerHTML = '';
+            
+            // Si el campo de búsqueda está vacío, no mostrar resultados
+            if (searchTerm.trim() === '') {
+                return;
+            }
+            
+            // Buscar en todos los contenidos de las pestañas
+            const tabContents = document.querySelectorAll('.tab-content');
+            let foundResults = false;
+            
+            tabContents.forEach(tab => {
+                const tabId = tab.id;
+                const tabTitle = document.querySelector(`.tab[onclick*="${tabId}"]`).textContent;
+                const textContent = tab.textContent.toLowerCase();
+                
+                if (textContent.includes(searchTerm)) {
+                    foundResults = true;
+                    const resultDiv = document.createElement('div');
+                    resultDiv.className = 'search-result';
+                    
+                    // Crear enlace al tab
+                    const link = document.createElement('a');
+                    link.href = '#';
+                    link.textContent = tabTitle;
+                    link.onclick = function(e) {
+                        e.preventDefault();
+                        const tabElement = document.querySelector(`.tab[onclick*="${tabId}"]`);
+                        tabElement.click();
+                        
+                        // Resaltar el texto encontrado
+                        const content = tab.textContent;
+                        const regex = new RegExp(searchTerm, 'gi');
+                        const highlightedContent = content.replace(regex, match => 
+                            `<span class="highlight">${match}</span>`
+                        );
+                        
+                        tab.innerHTML = highlightedContent;
+                    };
+                    
+                    const title = document.createElement('h3');
+                    title.appendChild(link);
+                    resultDiv.appendChild(title);
+                    
+                    // Mostrar fragmento del texto con el término buscado
+                    const startIndex = textContent.indexOf(searchTerm);
+                    const contextStart = Math.max(0, startIndex - 50);
+                    const contextEnd = Math.min(textContent.length, startIndex + searchTerm.length + 50);
+                    const context = textContent.substring(contextStart, contextEnd);
+                    
+                    const snippet = document.createElement('p');
+                    snippet.textContent = '...' + context + '...';
+                    resultDiv.appendChild(snippet);
+                    
+                    resultsContainer.appendChild(resultDiv);
+                }
+            });
+            
+            if (!foundResults) {
+                resultsContainer.innerHTML = '<p>No se encontraron resultados para "' + searchTerm + '"</p>';
+            }
+        });
+    </script>
 </body>
 </html>
